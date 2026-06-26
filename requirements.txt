@@ -1,0 +1,28 @@
+# LangChain core packages
+langchain
+langchain-community
+langchain-text-splitters
+
+# PDF document loading
+pypdf
+pymupdf
+pdfplumber
+
+# Vector database
+chromadb
+
+# Embeddings / Hugging Face models
+sentence-transformers
+transformers
+torch
+
+# Environment variables
+python-dotenv
+
+# OpenAI integration (only if using OpenAI models)
+langchain-openai
+openai
+
+# Optional: Better PDF parsing / OCR / complex layouts
+unstructured
+unstructured[pdf]
