@@ -14,8 +14,10 @@ documents = loader.load()
 
 # """""""""""""TextSplitter""""""""""""
 splitter = RecursiveCharacterTextSplitter(
-    chunk_size = 800,
-    chunk_overlap =150
+    chunk_size=800,
+    chunk_overlap=150,
+    separators=["\n\n", "\n", ". ", " ", ""],  # explicit priority
+    length_function=len,
 )
 
 chunks = splitter.split_documents(documents)
